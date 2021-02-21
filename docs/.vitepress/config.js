@@ -1,9 +1,9 @@
 module.exports = {
-    title: 'vuepress-doc',
-    description: '基于vuepress的组件文档库',
+    title: 'vitepress-doc',
+    description: '基于vitepress的组件文档库',
     base: '/',
-    dest: './docs/.vuepress/dist',
-    theme: '@vuepress/default',
+    dest: './docs/.vitepress/dist',
+    theme: '@vitepress/default',
     themeConfig: {
         nav: [
             { text: '首页', link: '/' },
@@ -53,12 +53,12 @@ module.exports = {
                             },
                             {
                                 text: 'HomePage',
-                                link: 'https://github.com/saqqdy/vuepress-doc#readme',
+                                link: 'https://github.com/saqqdy/vitepress-doc#readme',
                                 target: '_blank'
                             },
                             {
                                 text: 'Bugs',
-                                link: 'https://github.com/saqqdy/vuepress-doc/issues',
+                                link: 'https://github.com/saqqdy/vitepress-doc/issues',
                                 target: '_blank'
                             }
                         ]
@@ -112,13 +112,13 @@ module.exports = {
         },
         lastUpdated: '最近更新',
         // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
-        repo: 'https://github.com/saqqdy/vuepress-doc.git',
+        repo: 'https://github.com/saqqdy/vitepress-doc.git',
         // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
         // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
         repoLabel: '查看源码',
         // 以下为可选的编辑链接选项
         // 假如你的文档仓库和项目本身不在一个仓库：
-        docsRepo: 'https://github.com/saqqdy/vuepress-doc',
+        docsRepo: 'https://github.com/saqqdy/vitepress-doc',
         // 假如文档不是放在仓库的根目录下：
         docsDir: 'docs',
         // 假如文档放在一个特定的分支下：
@@ -131,18 +131,18 @@ module.exports = {
 
     plugins: [
         // 官方回到顶部插件
-        '@vuepress/back-to-top',
-        //官方图片放大组件 目前是所有img都可以点击放大。具体配置见https://v1.vuepress.vuejs.org/zh/plugin/official/plugin-medium-zoom.html
-        ['@vuepress/medium-zoom', { selector: 'img' }],
+        '@vitepress/back-to-top',
+        //官方图片放大组件 目前是所有img都可以点击放大。具体配置见https://v1.vitepress.vuejs.org/zh/plugin/official/plugin-medium-zoom.html
+        ['@vitepress/medium-zoom', { selector: 'img' }],
         // vssue 一个借助issue的评论插件 具体配置见https://vssue.js.org/zh/
         [
-            '@vssue/vuepress-plugin-vssue',
+            '@vssue/vitepress-plugin-vssue',
             {
                 // 设置 `platform` 而不是 `api` 我这里是在github平台
                 platform: 'github',
                 // owner与repo配置 https://github.com/${owner}/${repo}
                 owner: 'saqqdy',
-                repo: 'vuepress-doc',
+                repo: 'vitepress-doc',
                 // 填写自己的OAuth App 信息。详见https://vssue.js.org/zh/options/#repo
                 clientId: '',
                 clientSecret: '',

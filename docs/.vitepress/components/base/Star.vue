@@ -13,7 +13,7 @@ export default {
     name: 'BaseStar',
     methods: {
         starGithub() {
-            window.open('https://github.com/saqqdy/vuepress-doc')
+            window.open('https://github.com/saqqdy/vitepress-doc')
         }
     }
 }

@@ -1,4 +1,4 @@
-// 扩展 VuePress 应用  第三方应用级别配置
+// 扩展 VitePress 应用  第三方应用级别配置
 //vue代码高亮显示库 VueHighlightJS
 import VueHighlightJS from 'vue-highlight.js'
 
@@ -8,11 +8,11 @@ import VueHighlightJS from 'vue-highlight.js'
 import 'highlight.js/styles/codepen-embed.css'
 
 //你可以在这里引入自己定义的css样式，进行修改
-// import '../.vuepress/public/css/index.css'
+// import '../.vitepress/public/css/index.css'
 
 // 使用异步函数也是可以的
 export default ({
-    Vue, // VuePress 正在使用的 Vue 构造函数
+    Vue, // VitePress 正在使用的 Vue 构造函数
     options, // 附加到根实例的一些选项
     router, // 当前应用的路由实例
     siteData, // 站点元数据

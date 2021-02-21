@@ -70,7 +70,7 @@ export function resolvePage(pages, rawPath, base) {
             })
         }
     }
-    console.error(`[vuepress] No matching page found for sidebar item "${rawPath}"`)
+    console.error(`[vitepress] No matching page found for sidebar item "${rawPath}"`)
     return {}
 }
 
