@@ -1,0 +1,28 @@
+{
+	"name": "vitepress-demo1",
+	"version": "1.0.0",
+	"private": false,
+	"scripts": {
+		"docs:dev": "vitepress dev docs",
+		"docs:build": "vitepress build docs",
+		"docs:serve": "vitepress serve docs",
+		"docs:deploy": "GH=1 sh script/deploy-docs.sh",
+		"prettier": "prettier --write \"**/*.{js,ts,sh,vue,json,md}\""
+	},
+	"main": "index.js",
+	"author": "saqqdy",
+	"license": "MIT",
+	"dependencies": {
+		"highlight.js": "^10.6.0",
+		"vue-highlight.js": "^3.1.0"
+	},
+	"devDependencies": {
+		"@babel/eslint-parser": "^7.12.17",
+		"@saqqdy/prettier-config": "^1.0.3",
+		"eslint": "^7.20.0",
+		"eslint-config-sets": "^1.0.10",
+		"eslint-plugin-jsdoc": "^32.1.0",
+		"prettier": "^2.2.1",
+		"vitepress": "^0.11.3"
+	}
+}
