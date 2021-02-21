@@ -1,7 +1,7 @@
 module.exports = {
     title: 'vitepress-doc',
     description: '基于vitepress的组件文档库',
-    base: '/',
+    base: '/vitepress-doc/',
     dest: './docs/.vitepress/dist',
     theme: '@vitepress/default',
     themeConfig: {
