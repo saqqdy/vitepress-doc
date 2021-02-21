@@ -8,7 +8,7 @@ title: demo
 
 ### h3
 
-### Badge <Badge text="beta" type="warning"/> <Badge text="默认主题"/>
+### Badge <Badge text="beta" type="warning"/> <Badge text="default theme"/>
 
 <span v-for="i in 3">{{ i }} </span>
 

@@ -3,7 +3,7 @@ module.exports = {
     description: '基于vitepress的组件文档库',
     base: '/vitepress-doc/',
     dest: './docs/.vitepress/dist',
-    theme: '@vitepress/default',
+    // theme: '@vitepress/default',
     themeConfig: {
         nav: [
             { text: '首页', link: '/' },
@@ -129,28 +129,28 @@ module.exports = {
         editLinkText: '帮助我们改善此页面！'
     },
 
-    plugins: [
-        // 官方回到顶部插件
-        '@vitepress/back-to-top',
-        //官方图片放大组件 目前是所有img都可以点击放大。具体配置见https://v1.vitepress.vuejs.org/zh/plugin/official/plugin-medium-zoom.html
-        ['@vitepress/medium-zoom', { selector: 'img' }],
-        // vssue 一个借助issue的评论插件 具体配置见https://vssue.js.org/zh/
-        [
-            '@vssue/vitepress-plugin-vssue',
-            {
-                // 设置 `platform` 而不是 `api` 我这里是在github平台
-                platform: 'github',
-                // owner与repo配置 https://github.com/${owner}/${repo}
-                owner: 'saqqdy',
-                repo: 'vitepress-doc',
-                // 填写自己的OAuth App 信息。详见https://vssue.js.org/zh/options/#repo
-                clientId: '',
-                clientSecret: '',
-                locale: 'zh', //使用的语言  这里是简体中文
-                baseURL: 'https://github.com' //平台的 base URL
-            }
-        ]
-    ],
+    // plugins: [
+    //     // 官方回到顶部插件
+    //     '@vitepress/back-to-top',
+    //     //官方图片放大组件 目前是所有img都可以点击放大。具体配置见https://v1.vitepress.vuejs.org/zh/plugin/official/plugin-medium-zoom.html
+    //     ['@vitepress/medium-zoom', { selector: 'img' }],
+    //     // vssue 一个借助issue的评论插件 具体配置见https://vssue.js.org/zh/
+    //     [
+    //         '@vssue/vitepress-plugin-vssue',
+    //         {
+    //             // 设置 `platform` 而不是 `api` 我这里是在github平台
+    //             platform: 'github',
+    //             // owner与repo配置 https://github.com/${owner}/${repo}
+    //             owner: 'saqqdy',
+    //             repo: 'vitepress-doc',
+    //             // 填写自己的OAuth App 信息。详见https://vssue.js.org/zh/options/#repo
+    //             clientId: '',
+    //             clientSecret: '',
+    //             locale: 'zh', //使用的语言  这里是简体中文
+    //             baseURL: 'https://github.com' //平台的 base URL
+    //         }
+    //     ]
+    // ],
     markdown: {
         lineNumbers: true,
         toc: { includeLevel: [2, 3] }
